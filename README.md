@@ -1,10 +1,10 @@
-# PitchdogStudioUI — prepared canonical package
+# PitchdogStudioUI
 
 Resource-free SwiftUI/AppKit chrome, extracted with its source history from Galileo.
 Library sources match Galileo component revision b946f486dcea597fdcc939ec7d6b39d66809c9b3.
-This local repository has no remote and is not published. Both applications retain
-their guarded pilot configuration until package publication and permanent pins are
-authorized and verified. The existing development source is not silently superseded.
+Canonical package: https://github.com/bomkino/pitchdog-studio-ui.
+Galileo and Drift consume an immutable revision of this repository. Changes to the
+library require an explicit revision update in each application.
 
 `swift test` checks pure palette contracts.
 On a Mac, `swift run StudioUISpecimen`
@@ -26,4 +26,5 @@ relicense either application's existing controllers.
 
 Prototype tokens are not human-approved. Palette tests are not visual, keyboard,
 VoiceOver, packaged-app, minimum-OS or physical-device acceptance. The specimen is
-not bundled with Galileo or Drift. Public package publication remains a separate gate.
+not bundled with Galileo or Drift. Initial releases remain prereleases while those
+acceptance checks are open.

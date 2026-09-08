@@ -1,0 +1,16 @@
+name: Package CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Test palette and control contracts
+        run: swift test
+      - name: Compile the developer specimen
+        run: swift build --product StudioUISpecimen
